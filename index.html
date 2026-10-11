@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b46">
+<meta name="description" content="Humanity Bridge Foundation — Together for Humanity, Hope for Everyone.">
+<title>Humanity Bridge Foundation | Official Website</title>
+<style>
+:root{--navy:#102b46;--teal:#087f72;--gold:#d6ad59;--bg:#f4f7fa;--card:#fff;--text:#243448;--muted:#69798b;--line:#e3e9ef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.65}
+body.dark{--bg:#0b1725;--card:#132437;--text:#edf4fa;--muted:#b4c1cf;--line:#2a3d50;--navy:#091522}
+button,input,textarea,select{font:inherit}
+button,a{ -webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+.topbar{background:#0b1e31;color:#e8f2fa;text-align:center;padding:7px 12px;font-size:12px}
+header{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
+body.dark .brand{color:#f1f6fb}
+.logo{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,var(--teal),var(--navy));color:white;font-size:22px;border:2px solid #d7bd77}
+.brand small{display:block;font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:600}
+.nav-actions{display:flex;gap:7px;align-items:center}
+.btn,.iconbtn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;font-size:13px}
+.btn-primary{background:var(--teal);color:white}
+.btn-dark{background:var(--navy);color:white}
+.btn-outline{border:1px solid var(--line);background:var(--card);color:var(--text)}
+.iconbtn{padding:9px 11px;background:var(--bg);color:var(--text)}
+main{max-width:1160px;margin:auto;padding:20px 18px 55px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#102b46,#125d64);color:white;border-radius:24px;padding:clamp(26px,6vw,64px);display:grid;grid-template-columns:1.5fr 1fr;gap:25px;align-items:center;min-height:320px}
+.hero:after{content:"♡";position:absolute;right:5%;bottom:-85px;font-size:290px;color:#ffffff0b;pointer-events:none}
+.eyebrow{color:#f0d38a;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}
+h1{font-size:clamp(31px,5vw,54px);line-height:1.12;margin:12px 0}
+.hero p{color:#e0ebf1;max-width:580px;font-size:15px}
+.hero-art{display:grid;place-items:center;min-height:180px}
+.emblem{width:175px;height:175px;border:1px solid #e4ce8a;border-radius:50%;display:grid;place-items:center;font-size:80px;background:#ffffff0a;box-shadow:0 0 55px #8fd8c522}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.notice{margin:18px 0;padding:13px 16px;border-radius:12px;background:#fff8e7;border:1px solid #ecd99c;color:#654c19;font-size:13px}
+body.dark .notice{background:#352d1b;color:#ffe7a6;border-color:#5e4b25}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:34px 0 15px}
+h2{font-size:24px;line-height:1.25;margin:0;color:var(--text)}
+.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px;box-shadow:0 4px 16px #132a3b08;min-width:0}
+.card h3{font-size:15px;margin:10px 0 5px}
+.card p{font-size:12px;color:var(--muted);margin:0 0 13px}
+.symbol{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e4f4ef;color:#087f72;font-size:22px}
+body.dark .symbol{background:#193e3b}
+.card .btn{width:100%;margin-top:3px}
+.live{border-left:4px solid var(--gold)}
+.pill{display:inline-block;background:#e3f4ed;color:#087f72;border-radius:20px;padding:4px 9px;font-size:10px;font-weight:800}
+body.dark .pill{background:#193e3b;color:#91e1cb}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.info-card{padding:22px}
+.info-card p{font-size:14px;color:var(--muted)}
+.team-role{color:var(--teal)!important;font-weight:700}
+.formbox{display:grid;gap:12px}
+.formbox input,.formbox textarea,.formbox select{width:100%;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px}
+.formbox textarea{min-height:100px;resize:vertical}
+footer{background:#0b1e31;color:#dce7ef;padding:30px 18px}
+.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p,footer small{color:#aebdca;font-size:12px}
+footer a{color:#fff}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap;font-size:12px}
+#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:#102b46;color:#fff;padding:12px 18px;border-radius:12px;display:none;max-width:90%;font-size:13px;box-shadow:0 8px 30px #0003}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-art{display:none}}
+@media(max-width:480px){main{padding:12px 11px 35px}.nav{padding:10px}.brand{font-size:13px}.logo{width:36px;height:36px}.brand small{font-size:8px}.nav-actions{gap:4px}.btn,.iconbtn{padding:9px 10px;font-size:11px}.hero{padding:27px 21px;border-radius:17px}h1{font-size:34px}.section-head{margin-top:27px}h2{font-size:21px}.grid{gap:9px}.card{padding:12px}.card h3{font-size:13px}.card p{font-size:11px}.symbol{width:36px;height:36px;font-size:19px}.about-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar" id="topMessage">Together for Humanity, Hope for Everyone. • Official Foundation Website</div>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home">
+      <span class="logo">♡</span>
+      <span>HUMANITY BRIDGE<small>FOUNDATION</small></span>
+    </a>
+    <div class="nav-actions">
+      <button class="iconbtn" id="langBtn" onclick="toggleLang()">বাংলা</button>
+      <button class="iconbtn" onclick="toggleTheme()" aria-label="Toggle dark mode">◐</button>
+      <a href="#contact" class="btn btn-primary" id="helpBtn">Contact</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow" id="eyebrow">A COMMUNITY BUILT ON COMPASSION</div>
+    <h1 id="heroTitle">Together for Humanity,<br>Hope for Everyone.</h1>
+    <p id="heroDesc">A welcoming place for people who believe in kindness, dignity and working together for a better future.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="#about" id="aboutBtn">Discover Our Mission →</a>
+      <a class="btn btn-outline" style="background:#ffffff;color:#102b46" href="#volunteer" id="volBtn">Become a Volunteer</a>
+    </div>
+  </div>
+  <div class="hero-art"><div class="emblem">🤝</div></div>
+</section>
+
+<div class="notice"><strong id="noticeTitle">📢 Official Notice</strong><br><span id="noticeText">Welcome to Humanity Bridge Foundation. Website services are being prepared. Online donations are not open yet.</span></div>
+
+<div class="section-head" id="updates">
+  <div><h2 id="updatesTitle">Live Updates</h2><p id="updatesDesc">Official information from the foundation.</p></div>
+  <span class="pill">● <span id="statusText">Website Setup</span></span>
+</div>
+<div class="card live"><h3 id="updateHeading">A new beginning</h3><p id="updateBody">Our website is under development. Verified announcements and project updates will be published here when available.</p></div>
+
+<div class="section-head" id="about"><div><h2 id="aboutTitle">Who We Are</h2><p id="aboutSub">Our foundation, purpose and values.</p></div></div>
+<div class="about-grid">
+  <div class="card info-card"><div class="symbol">🌍</div><h3 id="missionTitle">Our Mission</h3><p id="missionText">To encourage compassion, community participation and responsible humanitarian support for people in need.</p></div>
+  <div class="card info-card"><div class="symbol">🌱</div><h3 id="visionTitle">Our Vision</h3><p id="visionText">A world where everyone is treated with dignity and communities work together to create lasting positive change.</p></div>
+  <div class="card info-card"><div class="symbol">💎</div><h3 id="valuesTitle">Our Values</h3><p id="valuesText">Human dignity, honesty, fairness, transparency, respect and responsible use of resources.</p></div>
+  <div class="card info-card"><div class="symbol">🛡️</div><h3 id="transTitle">Transparency</h3><p id="transText">We aim to publish verified activities and financial reports when the relevant systems and records are established.</p></div>
+</div>
+
+<div class="section-head" id="team"><div><h2 id="teamTitle">Our Team</h2><p id="teamSub">Foundation leadership and team.</p></div></div>
+<div class="grid">
+  <div class="card"><div class="symbol">👤</div><h3>Founder & Owner</h3><p>Founder profile will be added after confirmation.</p></div>
+  <div class="card"><div class="symbol">👤</div><h3>Website Administrator</h3><p>Administrator profile will be added after confirmation.</p></div>
+  <div class="card"><div class="symbol">👤</div><h3>Team Member</h3><p>Team member profile will be added after confirmation.</p></div>
+</div>
+
+<div class="section-head" id="projects"><div><h2 id="projectsTitle">Projects & Programs</h2><p id="projectsSub">Explore our planned areas of work.</p></div></div>
+<div class="grid" id="projectGrid"></div>
+
+<div class="section-head" id="services"><div><h2 id="servicesTitle">Explore Foundation Services</h2><p id="servicesSub">Browse the website sections below.</p></div></div>
+<div class="grid" id="sectionGrid"></div>
+
+<div class="section-head" id="volunteer"><div><h2 id="volTitle">Become a Volunteer</h2><p id="volSub">Share your interest in helping your community.</p></div></div>
+<div class="card info-card">
+  <form class="formbox" onsubmit="demoSubmit(event,'Volunteer registration is not connected yet. Please contact the foundation team.')">
+    <input required placeholder="Full name / পুরো নাম" aria-label="Full name">
+    <input required type="email" placeholder="Email address" aria-label="Email address">
+    <select required aria-label="Area of interest"><option value="">Area of interest / আগ্রহের ক্ষেত্র</option><option>Community Support</option><option>Education</option><option>Health & Wellbeing</option><option>Events & Fundraising</option></select>
+    <textarea placeholder="Tell us how you would like to help / কীভাবে সাহায্য করতে চান"></textarea>
+    <button class="btn btn-primary" type="submit" id="volSubmit">Submit Interest</button>
+  </form>
+</div>
+
+<div class="section-head" id="donate"><div><h2 id="donateTitle">Support Our Mission</h2><p id="donateSub">Responsible support begins with transparency.</p></div></div>
+<div class="card info-card">
+  <span class="pill" id="donateStatus">DONATIONS NOT OPEN</span>
+  <h3 id="donateHeading">Online donations are not available yet.</h3>
+  <p id="donateText">Payment services, legal requirements and financial reporting procedures must be verified before donations can be accepted. Please do not send money to unofficial accounts.</p>
+  <a class="btn btn-outline" href="#contact" id="donateContact">Contact Us for Information</a>
+</div>
+
+<div class="section-head" id="contact"><div><h2 id="contactTitle">Contact & Support</h2><p id="contactSub">Send a message to the foundation team.</p></div></div>
+<div class="card info-card">
+  <form class="formbox" onsubmit="demoSubmit(event,'This demo form is not connected to email or a database yet.')">
+    <input required placeholder="Your name / আপনার নাম" aria-label="Your name">
+    <input required type="email" placeholder="Email address" aria-label="Email address">
+    <input placeholder="Subject / বিষয়" aria-label="Subject">
+    <textarea required placeholder="Your message / আপনার বার্তা" aria-label="Message"></textarea>
+    <button class="btn btn-primary" type="submit" id="contactSubmit">Send Message</button>
+  </form>
+  <p id="contactFoot">Please note: this is a design preview. Form submissions are not stored or sent.</p>
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>♡ HUMANITY BRIDGE FOUNDATION</strong><p id="footerTag">Together for Humanity, Hope for Everyone.</p><small>© <span id="year"></span> Humanity Bridge Foundation. All rights reserved.</small></div>
+    <div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#volunteer">Volunteer</a><a href="#donate">Donation Policy</a><a href="#contact">Contact</a></div>
+  </div>
+  <div class="footer-inner"><small>Privacy Policy • Terms & Conditions • Donation Policy — full policies must be reviewed before launch.</small></div>
+</footer>
+<div id="toast" role="status"></div>
+
+<script>
+const items=[
+["about-us","About Us","পরিচিতি","Learn about the foundation and its purpose.","ফাউন্ডেশনের পরিচিতি ও উদ্দেশ্য জানুন।","🏛️","about"],
+["mission-vision","Mission & Vision","লক্ষ্য ও স্বপ্ন","Our goals, values and long-term vision.","আমাদের লক্ষ্য, মূল্যবোধ ও ভবিষ্যৎ পরিকল্পনা।","🌱","about"],
+["team","Our Team","আমাদের টিম","Meet confirmed foundation team members.","ফাউন্ডেশনের টিমের পরিচিতি।","👥","team"],
+["projects","Projects & Programs","প্রকল্প ও কর্মসূচি","Verified projects and community initiatives.","যাচাইকৃত প্রকল্প ও সামাজিক উদ্যোগ।","🤝","projects"],
+["events","Events & Campaigns","ইভেন্ট ও ক্যাম্পেইন","Announcements about upcoming activities.","আসন্ন কার্যক্রমের ঘোষণা।","📅","updates"],
+["gallery","Photo & Video Gallery","ছবি ও ভিডিও গ্যালারি","Photos and videos from verified activities.","যাচাইকৃত কার্যক্রমের ছবি ও ভিডিও।","🖼️","projects"],
+["news","News & Announcements","খবর ও ঘোষণা","Official foundation news and updates.","ফাউন্ডেশনের খবর ও আপডেট।","📰","updates"],
+["register","User Registration","নিবন্ধন","Account registration will be added with secure services.","নিরাপদ সার্ভিস যুক্ত হলে নিবন্ধন চালু হবে।","📝","contact"],
+["login","Login & Recovery","লগইন ও অ্যাকাউন্ট রিকভারি","Secure sign-in is not configured yet.","নিরাপদ লগইন এখনো চালু হয়নি।","🔐","contact"],
+["member","Member Portal","সদস্য পোর্টাল","Member features will be added after secure setup.","নিরাপদ ব্যবস্থা চালুর পর সদস্য সুবিধা যোগ হবে।","🪪","contact"],
+["volunteer","Volunteer Registration","স্বেচ্ছাসেবক নিবন্ধন","Share your interest in volunteering.","স্বেচ্ছাসেবক হওয়ার আগ্রহ জানান।","🙋","volunteer"],
+["partner","Become a Partner","পার্টনার হোন","Explore future partnership opportunities.","ভবিষ্যৎ অংশীদারত্বের সুযোগ।","🤝","contact"],
+["help-request","Request Help","সহায়তার আবেদন","A verified and private application process is required.","যাচাইকৃত ও ব্যক্তিগত আবেদন ব্যবস্থা প্রয়োজন।","🫶","contact"],
+["beneficiaries","Beneficiary Management","সহায়তাপ্রাপ্ত ব্যক্তির ব্যবস্থাপনা","Private beneficiary records require restricted access.","সহায়তাপ্রাপ্ত ব্যক্তির তথ্য সুরক্ষিত রাখতে হবে।","🏠","contact"],
+["contact","Contact & Support","যোগাযোগ ও সহায়তা","Contact the foundation team.","ফাউন্ডেশন টিমের সঙ্গে যোগাযোগ করুন।","✉️","contact"],
+["donate","Online Donation","অনলাইন ডোনেশন","Donations are not open yet.","ডোনেশন এখনো চালু হয়নি।","💚","donate"],
+["donation-history","Donation History","ডোনেশনের ইতিহাস","Private donor history requires secure login.","ব্যক্তিগত ইতিহাস দেখতে নিরাপদ লগইন প্রয়োজন।","🧾","donate"],
+["income-expense","Income & Expense","আয় ও ব্যয়","Financial records require verified data and controls.","আর্থিক হিসাবের জন্য যাচাইকৃত তথ্য ও নিয়ন্ত্রণ প্রয়োজন।","📊","contact"],
+["funds","Fund & Campaign Management","ফান্ড ও ক্যাম্পেইন","Campaign tools will be configured after review.","পর্যালোচনার পর ক্যাম্পেইন ব্যবস্থা চালু হবে।","🎯","projects"],
+["accounting","Automatic Accounting","স্বয়ংক্রিয় হিসাব","Secure accounting integration is not configured yet.","নিরাপদ হিসাব ব্যবস্থা এখনো সংযুক্ত নয়।","🧮","contact"],
+["receipts","Receipts & Reconciliation","রসিদ ও হিসাব মিল","Receipts require verified transactions.","রসিদের জন্য যাচাইকৃত লেনদেন প্রয়োজন।","📑","contact"],
+["reports","Financial Reports","আর্থিক প্রতিবেদন","Verified reports will be published when available.","যাচাইকৃত প্রতিবেদন প্রস্তুত হলে প্রকাশ করা হবে।","📈","updates"],
+["admin","Admin Dashboard","অ্যাডমিন ড্যাশবোর্ড","A secure private admin system is not configured yet.","নিরাপদ ব্যক্তিগত অ্যাডমিন সিস্টেম এখনো চালু হয়নি।","⚙️","contact"],
+["roles","Staff & Role Management","স্টাফ ও ভূমিকা","Restricted roles require backend authorization.","সীমিত অ্যাক্সেসের জন্য ব্যাকএন্ড অনুমতি প্রয়োজন।","🛡️","contact"],
+["content","Content Management","কনটেন্ট ব্যবস্থাপনা","Website content tools will be added in a later stage.","পরের ধাপে ওয়েবসাইট কনটেন্ট টুল যোগ হবে।","🗂️","contact"],
+["documents","Documents & Certificates","ডকুমেন্ট ও সার্টিফিকেট","Official documents will be published only after verification.","যাচাইয়ের পরই অফিসিয়াল ডকুমেন্ট প্রকাশ হবে।","📜","updates"],
+["notifications","Notifications & Newsletter","নোটিফিকেশন ও নিউজলেটার","Notification and email services are not connected yet.","নোটিফিকেশন ও ইমেইল সার্ভিস এখনো যুক্ত হয়নি।","🔔","contact"],
+["security","Privacy & Audit Logs","গোপনীয়তা ও অডিট লগ","Privacy and audit features require secure backend services.","গোপনীয়তা ও অডিট ফিচারের জন্য নিরাপদ ব্যাকএন্ড প্রয়োজন।","🔒","contact"],
+["settings","Language & Website Settings","ভাষা ও ওয়েবসাইট সেটিংস","Basic language and theme controls are available above.","উপরে ভাষা ও থিমের প্রাথমিক নিয়ন্ত্রণ রয়েছে।","🌐","home"]
+];
+const projects=[
+["🤲","Community Support","Support programs will be announced after planning and verification."],
+["📚","Education & Learning","Potential education initiatives; no active program is claimed yet."],
+["💗","Health & Wellbeing","Health-related initiatives require appropriate partners and review."],
+["🌿","Emergency & Relief","Relief campaigns will be published only when properly organized."]
+];
+const bn={
+topMessage:"মানবতার জন্য একসঙ্গে, সবার জন্য আশার আলো। • অফিসিয়াল ফাউন্ডেশন ওয়েবসাইট",
+eyebrow:"সহমর্মিতায় গড়া একটি কমিউনিটি",
+heroTitle:"মানবতার জন্য একসঙ্গে,<br>সবার জন্য আশার আলো।",
+heroDesc:"যারা দয়া, মর্যাদা ও সহযোগিতার মাধ্যমে সুন্দর ভবিষ্যৎ গড়তে বিশ্বাস করেন, তাদের জন্য একটি উদ্যোগ।",
+aboutBtn:"আমাদের লক্ষ্য জানুন →",volBtn:"স্বেচ্ছাসেবক হোন",helpBtn:"যোগাযোগ",
+noticeTitle:"📢 অফিসিয়াল নোটিশ",noticeText:"Humanity Bridge Foundation-এ স্বাগতম। ওয়েবসাইটের সেবা প্রস্তুত করা হচ্ছে। অনলাইন ডোনেশন এখনো চালু হয়নি।",
+updatesTitle:"সর্বশেষ আপডেট",updatesDesc:"ফাউন্ডেশনের অফিসিয়াল তথ্য।",statusText:"ওয়েবসাইট প্রস্তুতি",updateHeading:"নতুন যাত্রার শুরু",updateBody:"আমাদের ওয়েবসাইট তৈরির কাজ চলছে। যাচাইকৃত ঘোষণা ও প্রকল্পের আপডেট প্রস্তুত হলে এখানে প্রকাশ করা হবে।",
+aboutTitle:"আমরা কারা",aboutSub:"ফাউন্ডেশন, উদ্দেশ্য ও মূল্যবোধ।",missionTitle:"আমাদের লক্ষ্য",missionText:"সহমর্মিতা, সামাজিক অংশগ্রহণ এবং প্রয়োজনমতো মানুষের পাশে দায়িত্বশীলভাবে দাঁড়াতে উৎসাহ দেওয়া।",visionTitle:"আমাদের স্বপ্ন",visionText:"এমন একটি বিশ্ব যেখানে সবাই মর্যাদা পাবে এবং কমিউনিটি স্থায়ী ইতিবাচক পরিবর্তনে একসঙ্গে কাজ করবে।",valuesTitle:"আমাদের মূল্যবোধ",valuesText:"মানবিক মর্যাদা, সততা, ন্যায্যতা, স্বচ্ছতা, সম্মান এবং সম্পদের দায়িত্বশীল ব্যবহার।",transTitle:"স্বচ্ছতা",transText:"প্রয়োজনীয় ব্যবস্থা ও নথি প্রস্তুত হলে যাচাইকৃত কার্যক্রম ও আর্থিক প্রতিবেদন প্রকাশের লক্ষ্য রয়েছে।",
+teamTitle:"আমাদের টিম",teamSub:"ফাউন্ডেশনের নেতৃত্ব ও সদস্যরা।",projectsTitle:"প্রকল্প ও কর্মসূচি",projectsSub:"আমাদের পরিকল্পিত কাজের ক্ষেত্রগুলো দেখুন।",servicesTitle:"ফাউন্ডেশনের সেবাসমূহ",servicesSub:"নিচে ওয়েবসাইটের বিভিন্ন সেকশন দেখুন।",
+volTitle:"স্বেচ্ছাসেবক হোন",volSub:"কমিউনিটির জন্য কাজ করতে আপনার আগ্রহ জানান।",volSubmit:"আগ্রহ জমা দিন",donateTitle:"আমাদের লক্ষ্যকে সহায়তা করুন",donateSub:"দায়িত্বশীল সহায়তা শুরু হয় স্বচ্ছতা দিয়ে।",donateStatus:"ডোনেশন চালু হয়নি",donateHeading:"অনলাইন ডোনেশন এখনো চালু হয়নি।",donateText:"ডোনেশন গ্রহণের আগে পেমেন্ট সার্ভিস, আইনি প্রয়োজনীয়তা ও আর্থিক প্রতিবেদন পদ্ধতি যাচাই করতে হবে। অনুগ্রহ করে অননুমোদিত অ্যাকাউন্টে টাকা পাঠাবেন না।",donateContact:"তথ্যের জন্য যোগাযোগ করুন",contactTitle:"যোগাযোগ ও সহায়তা",contactSub:"ফাউন্ডেশন টিমকে বার্তা পাঠান।",contactSubmit:"বার্তা পাঠান",contactFoot:"দ্রষ্টব্য: এটি একটি ডিজাইন প্রিভিউ। ফর্মের তথ্য এখনো সংরক্ষণ বা পাঠানো হয় না।",footerTag:"মানবতার জন্য একসঙ্গে, সবার জন্য আশার আলো।"
+};
+let bengali=false;
+function toggleLang(){
+ bengali=!bengali;
+ document.documentElement.lang=bengali?"bn":"en";
+ document.getElementById("langBtn").textContent=bengali?"English":"বাংলা";
+ Object.keys(bn).forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML=bengali?bn[id]:enText[id]});
+ renderCards();
+}
+const enText={};
+Object.keys(bn).forEach(id=>{const el=document.getElementById(id);if(el)enText[id]=el.innerHTML});
+function renderCards(){
+ const grid=document.getElementById("sectionGrid");
+ grid.innerHTML="";
+ items.forEach((it,i)=>{
+  const title=bengali?it[2]:it[1],desc=bengali?it[4]:it[3];
+  const card=document.createElement("article");card.className="card";
+  const symbol=document.createElement("div");symbol.className="symbol";symbol.textContent=it[5];
+  const h=document.createElement("h3");h.textContent=(i+1)+". "+title;
+  const p=document.createElement("p");p.textContent=desc;
+  const a=document.createElement("a");a.className="btn btn-primary";a.href="#"+it[6];a.textContent=bengali?"দেখুন →":"Open Section →";
+  card.append(symbol,h,p,a);grid.appendChild(card);
+ });
+}
+function renderProjects(){
+ const grid=document.getElementById("projectGrid");
+ projects.forEach(p=>{
+  const card=document.createElement("article");card.className="card";
+  const symbol=document.createElement("div");symbol.className="symbol";symbol.textContent=p[0];
+  const h=document.createElement("h3");h.textContent=p[1];
+  const desc=document.createElement("p");desc.textContent=p[2];
+  card.append(symbol,h,desc);grid.appendChild(card);
+ });
+}
+function toggleTheme(){document.body.classList.toggle("dark")}
+let toastTimer;
+function showToast(message){
+ const toast=document.getElementById("toast");toast.textContent=message;toast.style.display="block";
+ clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.style.display="none",4200);
+}
+function demoSubmit(event,message){event.preventDefault();showToast(message)}
+document.getElementById("year").textContent=new Date().getFullYear();
+renderCards();renderProjects();
+</script>
+</body>
+</html>
