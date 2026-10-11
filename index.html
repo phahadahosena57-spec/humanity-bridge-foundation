@@ -4,264 +4,775 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#102b46">
-<meta name="description" content="Humanity Bridge Foundation — Together for Humanity, Hope for Everyone.">
-<title>Humanity Bridge Foundation | Official Website</title>
+<meta name="theme-color" content="#102b3a">
+<meta name="description" content="Humanity Bridge Foundation — Compassion, Humanity and Hope.">
+<title>HUMANITY BRIDGE FOUNDATION</title>
+
 <style>
-:root{--navy:#102b46;--teal:#087f72;--gold:#d6ad59;--bg:#f4f7fa;--card:#fff;--text:#243448;--muted:#69798b;--line:#e3e9ef}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.65}
-body.dark{--bg:#0b1725;--card:#132437;--text:#edf4fa;--muted:#b4c1cf;--line:#2a3d50;--navy:#091522}
-button,input,textarea,select{font:inherit}
-button,a{ -webkit-tap-highlight-color:transparent}
-a{color:inherit;text-decoration:none}
-button{cursor:pointer}
-.topbar{background:#0b1e31;color:#e8f2fa;text-align:center;padding:7px 12px;font-size:12px}
-header{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
-.nav{max-width:1160px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
-body.dark .brand{color:#f1f6fb}
-.logo{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,var(--teal),var(--navy));color:white;font-size:22px;border:2px solid #d7bd77}
-.brand small{display:block;font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:600}
-.nav-actions{display:flex;gap:7px;align-items:center}
-.btn,.iconbtn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;font-size:13px}
-.btn-primary{background:var(--teal);color:white}
-.btn-dark{background:var(--navy);color:white}
-.btn-outline{border:1px solid var(--line);background:var(--card);color:var(--text)}
-.iconbtn{padding:9px 11px;background:var(--bg);color:var(--text)}
-main{max-width:1160px;margin:auto;padding:20px 18px 55px}
-.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#102b46,#125d64);color:white;border-radius:24px;padding:clamp(26px,6vw,64px);display:grid;grid-template-columns:1.5fr 1fr;gap:25px;align-items:center;min-height:320px}
-.hero:after{content:"♡";position:absolute;right:5%;bottom:-85px;font-size:290px;color:#ffffff0b;pointer-events:none}
-.eyebrow{color:#f0d38a;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}
-h1{font-size:clamp(31px,5vw,54px);line-height:1.12;margin:12px 0}
-.hero p{color:#e0ebf1;max-width:580px;font-size:15px}
-.hero-art{display:grid;place-items:center;min-height:180px}
-.emblem{width:175px;height:175px;border:1px solid #e4ce8a;border-radius:50%;display:grid;place-items:center;font-size:80px;background:#ffffff0a;box-shadow:0 0 55px #8fd8c522}
-.hero-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.notice{margin:18px 0;padding:13px 16px;border-radius:12px;background:#fff8e7;border:1px solid #ecd99c;color:#654c19;font-size:13px}
-body.dark .notice{background:#352d1b;color:#ffe7a6;border-color:#5e4b25}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:34px 0 15px}
-h2{font-size:24px;line-height:1.25;margin:0;color:var(--text)}
-.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px;box-shadow:0 4px 16px #132a3b08;min-width:0}
-.card h3{font-size:15px;margin:10px 0 5px}
-.card p{font-size:12px;color:var(--muted);margin:0 0 13px}
-.symbol{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e4f4ef;color:#087f72;font-size:22px}
-body.dark .symbol{background:#193e3b}
-.card .btn{width:100%;margin-top:3px}
-.live{border-left:4px solid var(--gold)}
-.pill{display:inline-block;background:#e3f4ed;color:#087f72;border-radius:20px;padding:4px 9px;font-size:10px;font-weight:800}
-body.dark .pill{background:#193e3b;color:#91e1cb}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.info-card{padding:22px}
-.info-card p{font-size:14px;color:var(--muted)}
-.team-role{color:var(--teal)!important;font-weight:700}
-.formbox{display:grid;gap:12px}
-.formbox input,.formbox textarea,.formbox select{width:100%;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px}
-.formbox textarea{min-height:100px;resize:vertical}
-footer{background:#0b1e31;color:#dce7ef;padding:30px 18px}
-.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer p,footer small{color:#aebdca;font-size:12px}
-footer a{color:#fff}
-.footer-links{display:flex;gap:14px;flex-wrap:wrap;font-size:12px}
-#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:#102b46;color:#fff;padding:12px 18px;border-radius:12px;display:none;max-width:90%;font-size:13px;box-shadow:0 8px 30px #0003}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-art{display:none}}
-@media(max-width:480px){main{padding:12px 11px 35px}.nav{padding:10px}.brand{font-size:13px}.logo{width:36px;height:36px}.brand small{font-size:8px}.nav-actions{gap:4px}.btn,.iconbtn{padding:9px 10px;font-size:11px}.hero{padding:27px 21px;border-radius:17px}h1{font-size:34px}.section-head{margin-top:27px}h2{font-size:21px}.grid{gap:9px}.card{padding:12px}.card h3{font-size:13px}.card p{font-size:11px}.symbol{width:36px;height:36px;font-size:19px}.about-grid{grid-template-columns:1fr}}
+:root {
+  --bg:#f4f7f8;
+  --surface:#ffffff;
+  --text:#172b36;
+  --muted:#687985;
+  --primary:#102b3a;
+  --primary2:#174b56;
+  --gold:#d7b568;
+  --teal:#138577;
+  --border:#e0e8eb;
+  --shadow:0 8px 28px rgba(16,43,58,.07);
+}
+body.dark {
+  --bg:#0b1720;
+  --surface:#12242f;
+  --text:#edf5f7;
+  --muted:#b1c1c8;
+  --primary:#07131b;
+  --primary2:#17404a;
+  --border:#29404b;
+  --shadow:0 8px 28px rgba(0,0,0,.2);
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:90px}
+body {
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.65;transition:background .25s,color .25s;
+}
+button,input,textarea,select {font:inherit}
+button,a { -webkit-tap-highlight-color:transparent }
+a {color:inherit;text-decoration:none}
+button {cursor:pointer}
+img,svg {max-width:100%}
+.container {width:min(1160px,92%);margin:auto}
+.topline {height:4px;background:linear-gradient(90deg,#138577,#d7b568,#138577)}
+header {
+  position:sticky;top:0;z-index:50;
+  background:var(--surface);border-bottom:1px solid var(--border);
+  box-shadow:0 2px 12px rgba(0,0,0,.035);
+}
+.nav {
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;min-height:76px;
+}
+.brand {display:flex;align-items:center;gap:10px;min-width:0}
+.logo {
+  width:48px;height:48px;flex-shrink:0;border-radius:15px;
+  display:grid;place-items:center;background:var(--primary);color:var(--gold);
+  border:1px solid #c8a85b;
+}
+.brand-name {font-size:15px;font-weight:900;line-height:1.3}
+.brand-sub {font-size:10px;color:var(--muted);letter-spacing:1.2px}
+.navlinks {display:flex;align-items:center;gap:17px;font-size:13px;font-weight:700}
+.navlinks a:hover {color:var(--teal)}
+.nav-actions {display:flex;gap:7px;align-items:center}
+.icon-btn {
+  border:1px solid var(--border);background:var(--surface);color:var(--text);
+  border-radius:10px;padding:9px 11px;
+}
+.btn {
+  border:0;border-radius:10px;padding:11px 17px;font-weight:800;
+  display:inline-flex;justify-content:center;align-items:center;gap:7px;
+  transition:transform .2s,opacity .2s;
+}
+.btn:hover {transform:translateY(-2px)}
+.btn-primary {background:var(--primary);color:#fff}
+.btn-gold {background:var(--gold);color:#152a35}
+.btn-teal {background:var(--teal);color:#fff}
+.btn-outline {border:1px solid var(--border);background:transparent;color:var(--text)}
+.menu-toggle {display:none}
+.hero {
+  background:radial-gradient(circle at 85% 20%,#22616a 0,transparent 35%),
+  linear-gradient(135deg,#0b202c,#123d49 65%,#174b56);
+  color:#fff;padding:68px 0 58px;position:relative;overflow:hidden;
+}
+.hero-grid {display:grid;grid-template-columns:1.35fr .65fr;gap:34px;align-items:center}
+.eyebrow {
+  display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff35;
+  border-radius:30px;padding:6px 12px;color:#e5d6a8;font-size:12px;
+}
+.hero h1 {font-size:clamp(30px,5vw,51px);line-height:1.13;margin:20px 0 14px;letter-spacing:-1px}
+.hero h1 span {color:var(--gold)}
+.hero p {color:#dce8e9;max-width:620px;font-size:15px}
+.hero-buttons {display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.hero .btn-outline {color:#fff;border-color:#ffffff60}
+.hero-seal {
+  width:min(260px,75%);aspect-ratio:1;border-radius:50%;margin:auto;
+  border:1px solid #d7b56890;display:grid;place-items:center;
+  background:radial-gradient(circle,#24515a,#102b3a 70%);
+  box-shadow:0 0 0 14px #ffffff08,0 0 55px #d7b56816;
+}
+.hero-seal-inner {text-align:center;padding:25px}
+.hero-seal .crescent {font-size:76px;line-height:1;color:var(--gold)}
+.hero-seal strong {display:block;font-size:12px;letter-spacing:2px;margin-top:15px}
+.hero-seal small {color:#d7b568}
+section {padding:50px 0}
+.section-head {text-align:center;max-width:720px;margin:0 auto 28px}
+.kicker {color:var(--teal);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.section-head h2 {font-size:clamp(24px,4vw,34px);line-height:1.25;margin:8px 0}
+.section-head p {color:var(--muted);font-size:14px;margin:8px 0}
+.card {
+  background:var(--surface);border:1px solid var(--border);border-radius:17px;
+  padding:21px;box-shadow:var(--shadow);min-width:0;
+}
+.notice-wrap {padding:22px 0 0}
+.notice-card {
+  display:grid;grid-template-columns:auto 1fr;gap:13px;align-items:center;
+  border:1px solid #d7b56870;border-radius:16px;background:var(--surface);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.notice-icon {
+  align-self:stretch;display:grid;place-items:center;background:var(--primary);
+  color:var(--gold);padding:16px;
+}
+.notice-icon svg {width:29px;height:29px;animation:micPulse 1.6s infinite}
+@keyframes micPulse {
+  0%,100% {opacity:1;filter:drop-shadow(0 0 0 #d7b568)}
+  50% {opacity:.38;filter:drop-shadow(0 0 9px #d7b568)}
+}
+.notice-content {padding:12px 12px 12px 0;min-width:0}
+.notice-heading {display:flex;justify-content:space-between;align-items:center;gap:10px}
+.notice-heading strong {font-size:13px;letter-spacing:.7px}
+.live-pill {font-size:10px;color:#138577;font-weight:900;white-space:nowrap}
+.live-dot {display:inline-block;width:7px;height:7px;background:#17a875;border-radius:50%;margin-right:4px;animation:micPulse 1.5s infinite}
+.marquee {overflow:hidden;white-space:nowrap;margin-top:6px;color:var(--muted);font-size:13px}
+.marquee span {display:inline-block;padding-left:100%;animation:marquee 25s linear infinite}
+.marquee:hover span {animation-play-state:paused}
+@keyframes marquee {to {transform:translateX(-100%)}}
+.notice-content small {color:var(--muted);font-size:10px}
+.stats-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.stat {text-align:center}
+.stat-icon {font-size:25px}
+.stat strong {display:block;font-size:18px;margin:5px 0}
+.stat span {font-size:12px;color:var(--muted)}
+.about-grid {display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.about-panel {background:var(--primary);color:white;border-radius:20px;padding:28px}
+.about-panel h3 {color:var(--gold);margin-top:0}
+.about-panel p {font-size:14px;color:#dbe6e9}
+.check-list {list-style:none;padding:0;margin:16px 0}
+.check-list li {padding:7px 0;font-size:13px}
+.check-list li::before {content:"✓";color:var(--gold);font-weight:900;margin-right:10px}
+.features {display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature {border:1px solid var(--border);border-radius:15px;padding:20px;background:var(--surface)}
+.feature .emoji {font-size:25px}
+.feature h3 {font-size:15px;margin:8px 0}
+.feature p {font-size:12px;color:var(--muted);margin:0}
+.section-alt {background:color-mix(in srgb,var(--surface) 50%,var(--bg))}
+.section-tools {display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filter-btn {padding:8px 13px;border:1px solid var(--border);border-radius:25px;background:var(--surface);color:var(--text);font-size:12px}
+.filter-btn.active {background:var(--primary);color:white}
+.search {width:100%;max-width:460px;display:block;margin:0 auto 20px}
+input,textarea,select {
+  width:100%;border:1px solid var(--border);border-radius:10px;padding:12px;
+  background:var(--bg);color:var(--text);outline:none;
+}
+input:focus,textarea:focus,select:focus {border-color:var(--teal);box-shadow:0 0 0 3px #13857718}
+.section-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.section-card {display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.section-card .card-icon {
+  width:43px;height:43px;border-radius:13px;background:color-mix(in srgb,var(--teal) 12%,var(--surface));
+  display:grid;place-items:center;font-size:22px;
+}
+.section-card h3 {font-size:14px;margin:0}
+.section-card p {font-size:11px;color:var(--muted);margin:0;flex:1}
+.section-card .btn {width:100%;font-size:11px;padding:9px 7px}
+.section-card[hidden] {display:none}
+.notice-list {display:grid;gap:10px}
+.notice-item {display:flex;gap:12px;align-items:flex-start}
+.notice-item .nicon {font-size:22px}
+.notice-item h3 {font-size:14px;margin:0}
+.notice-item p {font-size:12px;color:var(--muted);margin:3px 0}
+.team-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.team-card{text-align:center}
+.avatar {
+  width:80px;height:80px;margin:0 auto 13px;border-radius:50%;
+  display:grid;place-items:center;background:linear-gradient(135deg,#102b3a,#138577);
+  color:#f0d88e;font-size:27px;border:3px solid #d7b56880;
+}
+.team-card h3 {margin:0;font-size:16px}
+.team-card p {margin:5px 0;color:var(--muted);font-size:12px}
+.role {display:inline-block;margin-top:5px;background:#d7b56825;color:var(--text);padding:5px 10px;border-radius:20px;font-size:11px}
+.contact-grid {display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.contact-item {display:flex;gap:12px;align-items:center}
+.contact-icon {width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#25d36618;font-size:23px}
+.contact-item h3 {font-size:14px;margin:0}
+.contact-item p {font-size:12px;color:var(--muted);margin:3px 0}
+.contact-item .btn {margin-left:auto;font-size:11px;padding:8px 10px}
+.cta {
+  background:linear-gradient(130deg,#102b3a,#174b56);color:white;border-radius:22px;
+  padding:30px;text-align:center;
+}
+.cta h2 {margin:0 0 8px}
+.cta p {color:#d5e3e6;font-size:13px}
+footer {background:#0b202b;color:#e8f1f3;padding:38px 0 18px}
+.footer-grid {display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:25px}
+footer h3 {font-size:14px;color:#e1c77d}
+footer p,footer a {font-size:12px;color:#c3d1d6}
+footer a {display:block;margin:7px 0}
+.footer-bottom {border-top:1px solid #ffffff22;margin-top:25px;padding-top:15px;text-align:center;font-size:11px;color:#9fb2ba}
+.modal {
+  position:fixed;inset:0;background:#06151dcc;z-index:100;
+  display:none;align-items:center;justify-content:center;padding:18px;overflow:auto;
+}
+.modal.open {display:flex}
+.modal-box {
+  width:min(470px,100%);max-height:92vh;overflow:auto;
+  background:var(--surface);color:var(--text);border-radius:18px;padding:25px;
+  box-shadow:0 20px 70px #0005;
+}
+.modal-head {display:flex;justify-content:space-between;align-items:center;gap:10px}
+.modal-head h2 {font-size:21px;margin:0}
+.close {font-size:23px;border:0;background:transparent;color:var(--text)}
+.form-grid {display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group {margin-top:12px}
+.form-group label {display:block;font-size:12px;font-weight:700;margin-bottom:5px}
+.form-note {font-size:11px;color:var(--muted)}
+.form-submit {width:100%;margin-top:16px}
+.message {display:none;margin-top:13px;padding:12px;border-radius:10px;font-size:12px;background:#d7b56825}
+.message.show {display:block}
+.toast {
+  position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);
+  background:var(--primary);color:white;padding:12px 18px;border-radius:12px;
+  font-size:13px;z-index:120;opacity:0;pointer-events:none;transition:.25s;
+  width:max-content;max-width:90%;
+}
+.toast.show {opacity:1;transform:translate(-50%,0)}
+.back-top {
+  position:fixed;bottom:18px;right:16px;z-index:40;width:43px;height:43px;
+  border:0;border-radius:50%;background:var(--gold);color:#102b3a;font-size:20px;
+  box-shadow:var(--shadow);
+}
+@media(max-width:900px) {
+  .navlinks {display:none;position:absolute;top:76px;left:0;right:0;padding:18px 4%;
+    background:var(--surface);border-bottom:1px solid var(--border);flex-direction:column;align-items:flex-start}
+  .navlinks.open {display:flex}
+  .menu-toggle {display:inline-block}
+  .hero-grid {grid-template-columns:1fr}
+  .hero-seal {width:170px}
+  .hero-seal .crescent {font-size:50px}
+  .section-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:620px) {
+  .brand-name {font-size:12px}
+  .brand-sub {font-size:9px}
+  .logo {width:41px;height:41px}
+  .nav {min-height:67px}
+  .navlinks {top:67px}
+  .nav-actions .btn {padding:9px 10px;font-size:11px}
+  .hero {padding:42px 0}
+  .hero h1 {font-size:32px}
+  section {padding:37px 0}
+  .notice-card {gap:9px}
+  .notice-icon {padding:11px}
+  .notice-content {padding-right:9px}
+  .notice-heading strong {font-size:11px}
+  .stats-grid {gap:8px}
+  .stat strong {font-size:15px}
+  .stat span {font-size:10px}
+  .about-grid,.contact-grid {grid-template-columns:1fr}
+  .features {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .feature {padding:15px}
+  .section-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .section-card {padding:14px}
+  .team-grid {grid-template-columns:1fr}
+  .team-card {padding:20px}
+  .footer-grid {grid-template-columns:1fr;gap:12px}
+  .form-grid {grid-template-columns:1fr}
+  .cta {padding:23px 16px}
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
 </style>
 </head>
+
 <body>
-<div class="topbar" id="topMessage">Together for Humanity, Hope for Everyone. • Official Foundation Website</div>
+<div class="topline"></div>
+
 <header>
-  <div class="nav">
-    <a class="brand" href="#home">
-      <span class="logo">♡</span>
-      <span>HUMANITY BRIDGE<small>FOUNDATION</small></span>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Home">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="36" height="36" fill="none">
+          <path d="M24 4C14 4 7 12 7 22c0 10 7 18 17 20 9-2 17-10 17-20 0-10-7-18-17-18Z" stroke="#D7B568" stroke-width="1.5"/>
+          <path d="M29 9c-7 3-10 10-8 16 2 5 6 8 12 8-8 5-19 0-20-10C12 14 20 8 29 9Z" fill="#D7B568"/>
+          <path d="M11 34c5-4 8-4 13 0 5-4 9-4 13 0M16 29l8 7 8-7" stroke="#D7B568" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name">HUMANITY BRIDGE FOUNDATION</div>
+        <div class="brand-sub">COMPASSION • HUMANITY • HOPE</div>
+      </div>
     </a>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+      <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+      <a href="#sections" data-en="Departments" data-bn="বিভাগ">Departments</a>
+      <a href="#notices" data-en="Notices" data-bn="নোটিশ">Notices</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+    </nav>
+
     <div class="nav-actions">
-      <button class="iconbtn" id="langBtn" onclick="toggleLang()">বাংলা</button>
-      <button class="iconbtn" onclick="toggleTheme()" aria-label="Toggle dark mode">◐</button>
-      <a href="#contact" class="btn btn-primary" id="helpBtn">Contact</a>
+      <button class="icon-btn" id="languageBtn" aria-label="Change language">বাংলা</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+      <button class="icon-btn menu-toggle" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
   </div>
 </header>
+
 <main>
 <section class="hero" id="home">
-  <div>
-    <div class="eyebrow" id="eyebrow">A COMMUNITY BUILT ON COMPASSION</div>
-    <h1 id="heroTitle">Together for Humanity,<br>Hope for Everyone.</h1>
-    <p id="heroDesc">A welcoming place for people who believe in kindness, dignity and working together for a better future.</p>
-    <div class="hero-buttons">
-      <a class="btn btn-primary" href="#about" id="aboutBtn">Discover Our Mission →</a>
-      <a class="btn btn-outline" style="background:#ffffff;color:#102b46" href="#volunteer" id="volBtn">Become a Volunteer</a>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">✦ HUMANITY • SERVICE • HOPE</span>
+      <h1>Welcome to <span>Humanity Bridge Foundation</span></h1>
+      <p data-en="Standing beside people in need and building a future with compassion, dignity and hope."
+         data-bn="মানবতার সেবা, অসহায় মানুষের পাশে দাঁড়ানো এবং সহমর্মিতা ও আশার সঙ্গে সুন্দর ভবিষ্যৎ গড়াই আমাদের প্রত্যয়।">
+        Standing beside people in need and building a future with compassion, dignity and hope.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-gold" data-modal="register">✦ Register Now</button>
+        <button class="btn btn-outline" data-modal="login">↗ Member Login</button>
+        <a class="btn btn-outline" href="#about">Explore Foundation ↓</a>
+      </div>
+    </div>
+    <div class="hero-seal" aria-label="Islamic-inspired foundation emblem">
+      <div class="hero-seal-inner">
+        <div class="crescent">☪</div>
+        <strong>HUMANITY BRIDGE</strong>
+        <small>FOUNDATION</small>
+      </div>
     </div>
   </div>
-  <div class="hero-art"><div class="emblem">🤝</div></div>
 </section>
 
-<div class="notice"><strong id="noticeTitle">📢 Official Notice</strong><br><span id="noticeText">Welcome to Humanity Bridge Foundation. Website services are being prepared. Online donations are not open yet.</span></div>
-
-<div class="section-head" id="updates">
-  <div><h2 id="updatesTitle">Live Updates</h2><p id="updatesDesc">Official information from the foundation.</p></div>
-  <span class="pill">● <span id="statusText">Website Setup</span></span>
-</div>
-<div class="card live"><h3 id="updateHeading">A new beginning</h3><p id="updateBody">Our website is under development. Verified announcements and project updates will be published here when available.</p></div>
-
-<div class="section-head" id="about"><div><h2 id="aboutTitle">Who We Are</h2><p id="aboutSub">Our foundation, purpose and values.</p></div></div>
-<div class="about-grid">
-  <div class="card info-card"><div class="symbol">🌍</div><h3 id="missionTitle">Our Mission</h3><p id="missionText">To encourage compassion, community participation and responsible humanitarian support for people in need.</p></div>
-  <div class="card info-card"><div class="symbol">🌱</div><h3 id="visionTitle">Our Vision</h3><p id="visionText">A world where everyone is treated with dignity and communities work together to create lasting positive change.</p></div>
-  <div class="card info-card"><div class="symbol">💎</div><h3 id="valuesTitle">Our Values</h3><p id="valuesText">Human dignity, honesty, fairness, transparency, respect and responsible use of resources.</p></div>
-  <div class="card info-card"><div class="symbol">🛡️</div><h3 id="transTitle">Transparency</h3><p id="transText">We aim to publish verified activities and financial reports when the relevant systems and records are established.</p></div>
-</div>
-
-<div class="section-head" id="team"><div><h2 id="teamTitle">Our Team</h2><p id="teamSub">Foundation leadership and team.</p></div></div>
-<div class="grid">
-  <div class="card"><div class="symbol">👤</div><h3>Founder & Owner</h3><p>Founder profile will be added after confirmation.</p></div>
-  <div class="card"><div class="symbol">👤</div><h3>Website Administrator</h3><p>Administrator profile will be added after confirmation.</p></div>
-  <div class="card"><div class="symbol">👤</div><h3>Team Member</h3><p>Team member profile will be added after confirmation.</p></div>
-</div>
-
-<div class="section-head" id="projects"><div><h2 id="projectsTitle">Projects & Programs</h2><p id="projectsSub">Explore our planned areas of work.</p></div></div>
-<div class="grid" id="projectGrid"></div>
-
-<div class="section-head" id="services"><div><h2 id="servicesTitle">Explore Foundation Services</h2><p id="servicesSub">Browse the website sections below.</p></div></div>
-<div class="grid" id="sectionGrid"></div>
-
-<div class="section-head" id="volunteer"><div><h2 id="volTitle">Become a Volunteer</h2><p id="volSub">Share your interest in helping your community.</p></div></div>
-<div class="card info-card">
-  <form class="formbox" onsubmit="demoSubmit(event,'Volunteer registration is not connected yet. Please contact the foundation team.')">
-    <input required placeholder="Full name / পুরো নাম" aria-label="Full name">
-    <input required type="email" placeholder="Email address" aria-label="Email address">
-    <select required aria-label="Area of interest"><option value="">Area of interest / আগ্রহের ক্ষেত্র</option><option>Community Support</option><option>Education</option><option>Health & Wellbeing</option><option>Events & Fundraising</option></select>
-    <textarea placeholder="Tell us how you would like to help / কীভাবে সাহায্য করতে চান"></textarea>
-    <button class="btn btn-primary" type="submit" id="volSubmit">Submit Interest</button>
-  </form>
+<div class="container notice-wrap">
+  <div class="notice-card">
+    <div class="notice-icon" title="Animated announcement microphone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="9" y="2" width="6" height="13" rx="3"/>
+        <path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/>
+      </svg>
+    </div>
+    <div class="notice-content">
+      <div class="notice-heading">
+        <strong data-en="OFFICIAL NOTICE BOARD" data-bn="অফিশিয়াল নোটিশ বোর্ড">OFFICIAL NOTICE BOARD</strong>
+        <span class="live-pill"><span class="live-dot"></span>LIVE STYLE</span>
+      </div>
+      <div class="marquee" aria-label="Notice ticker">
+        <span id="tickerText">Welcome to Humanity Bridge Foundation • Official notices will appear here after publication • মানবতার সেবায়, মানুষের পাশে •</span>
+      </div>
+      <small data-en="Announcements will be updated by the foundation administrator."
+             data-bn="ফাউন্ডেশনের অনুমোদিত অ্যাডমিন এখানে বিজ্ঞপ্তি আপডেট করবেন।">
+        Announcements will be updated by the foundation administrator.
+      </small>
+    </div>
+  </div>
 </div>
 
-<div class="section-head" id="donate"><div><h2 id="donateTitle">Support Our Mission</h2><p id="donateSub">Responsible support begins with transparency.</p></div></div>
-<div class="card info-card">
-  <span class="pill" id="donateStatus">DONATIONS NOT OPEN</span>
-  <h3 id="donateHeading">Online donations are not available yet.</h3>
-  <p id="donateText">Payment services, legal requirements and financial reporting procedures must be verified before donations can be accepted. Please do not send money to unofficial accounts.</p>
-  <a class="btn btn-outline" href="#contact" id="donateContact">Contact Us for Information</a>
-</div>
+<section>
+  <div class="container stats-grid">
+    <div class="card stat"><div class="stat-icon">🤝</div><strong>Humanity</strong><span>Service with dignity</span></div>
+    <div class="card stat"><div class="stat-icon">💚</div><strong>Compassion</strong><span>Care for people</span></div>
+    <div class="card stat"><div class="stat-icon">🌱</div><strong>Hope</strong><span>A better tomorrow</span></div>
+  </div>
+</section>
 
-<div class="section-head" id="contact"><div><h2 id="contactTitle">Contact & Support</h2><p id="contactSub">Send a message to the foundation team.</p></div></div>
-<div class="card info-card">
-  <form class="formbox" onsubmit="demoSubmit(event,'This demo form is not connected to email or a database yet.')">
-    <input required placeholder="Your name / আপনার নাম" aria-label="Your name">
-    <input required type="email" placeholder="Email address" aria-label="Email address">
-    <input placeholder="Subject / বিষয়" aria-label="Subject">
-    <textarea required placeholder="Your message / আপনার বার্তা" aria-label="Message"></textarea>
-    <button class="btn btn-primary" type="submit" id="contactSubmit">Send Message</button>
-  </form>
-  <p id="contactFoot">Please note: this is a design preview. Form submissions are not stored or sent.</p>
-</div>
+<section id="about" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Who We Are</div>
+      <h2 data-en="About Our Foundation" data-bn="আমাদের ফাউন্ডেশন সম্পর্কে">About Our Foundation</h2>
+      <p data-en="A platform designed to support humanitarian activities, volunteering and transparent communication."
+         data-bn="মানবিক কার্যক্রম, স্বেচ্ছাসেবা এবং স্বচ্ছ যোগাযোগের জন্য তৈরি একটি প্ল্যাটফর্ম।">
+        A platform designed to support humanitarian activities, volunteering and transparent communication.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-panel">
+        <h3>Our Mission</h3>
+        <p>To encourage compassion, support people in need and help build stronger communities through responsible humanitarian work.</p>
+        <ul class="check-list">
+          <li>Support people facing hardship</li>
+          <li>Encourage community volunteering</li>
+          <li>Share accurate activity updates</li>
+          <li>Promote accountability and dignity</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="kicker">Our Vision</div>
+        <h2>A Bridge of Hope</h2>
+        <p style="color:var(--muted);font-size:14px">
+          We aim to build a trusted platform where people can learn about projects, volunteer, request assistance and understand how verified donations are used.
+        </p>
+        <hr style="border:0;border-top:1px solid var(--border);margin:20px 0">
+        <h3>Our Values</h3>
+        <p style="color:var(--muted);font-size:13px">Honesty · Compassion · Responsibility · Respect · Transparency</p>
+        <a href="#sections" class="btn btn-primary">Explore Departments →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sections">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Explore Our Platform</div>
+      <h2>Our 30 Departments</h2>
+      <p>Explore the foundation's planned departments. Features that require a backend will be connected in a later development step.</p>
+    </div>
+    <input class="search" id="departmentSearch" type="search" placeholder="🔎 Search departments..." aria-label="Search departments">
+    <div class="section-tools">
+      <button class="filter-btn active" data-filter="all">All Departments</button>
+      <button class="filter-btn" data-filter="service">Humanitarian</button>
+      <button class="filter-btn" data-filter="community">Community</button>
+      <button class="filter-btn" data-filter="management">Management</button>
+    </div>
+    <div class="section-grid" id="departmentGrid"></div>
+  </div>
+</section>
+
+<section id="notices" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Stay Informed</div>
+      <h2>Notices & Updates</h2>
+      <p>Official announcements will be published here when the foundation has verified information to share.</p>
+    </div>
+    <div class="card notice-list">
+      <div class="notice-item">
+        <div class="nicon">📢</div>
+        <div><h3>Welcome to Humanity Bridge Foundation</h3><p>This website is being prepared. Official activities and announcements will be posted when confirmed.</p></div>
+      </div>
+      <hr style="border:0;border-top:1px solid var(--border);width:100%">
+      <div class="notice-item">
+        <div class="nicon">🔔</div>
+        <div><h3>Volunteer & Project Updates</h3><p>Project information and volunteer opportunities will be published after the details are confirmed by the foundation.</p></div>
+      </div>
+      <p style="font-size:11px;color:var(--muted);margin:0">Demo notices are informational placeholders, not claims of completed projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="founder">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Leadership</div>
+      <h2>Founder & Owner</h2>
+      <p>Meet the founder of Humanity Bridge Foundation.</p>
+    </div>
+    <div class="team-grid">
+      <div class="card team-card">
+        <div class="avatar" aria-hidden="true">AA</div>
+        <h3>ABDUL AHEAD</h3>
+        <span class="role">Founder & Owner</span>
+        <p>Humanity Bridge Foundation</p>
+      </div>
+      <div class="card team-card">
+        <div class="avatar" aria-hidden="true">🤝</div>
+        <h3>Our Team</h3>
+        <p>Team member information will be added when confirmed.</p>
+      </div>
+      <div class="card team-card">
+        <div class="avatar" aria-hidden="true">🌱</div>
+        <h3>Volunteers</h3>
+        <p>Volunteer profiles will appear after approval and consent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" id="volunteer">
+  <div class="container">
+    <div class="cta">
+      <h2>Be a Bridge of Hope</h2>
+      <p>Interested in helping your community? Contact the foundation to learn about future volunteer opportunities.</p>
+      <button class="btn btn-gold" data-modal="register">Join as a Member</button>
+      <a class="btn btn-outline" href="#contact" style="color:white;border-color:#ffffff70">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Get in Touch</div>
+      <h2>Contact Our Foundation</h2>
+      <p>Choose a WhatsApp number to start a conversation.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="card contact-item">
+        <div class="contact-icon">💬</div>
+        <div><h3>WhatsApp Contact 1</h3><p>01400524877</p></div>
+        <a class="btn btn-teal" href="https://wa.me/8801400524877" target="_blank" rel="noopener noreferrer">Chat</a>
+      </div>
+      <div class="card contact-item">
+        <div class="contact-icon">💬</div>
+        <div><h3>WhatsApp Contact 2</h3><p>01335611366</p></div>
+        <a class="btn btn-teal" href="https://wa.me/8801335611366" target="_blank" rel="noopener noreferrer">Chat</a>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:16px">
+      Telegram and other social links can be added after their exact usernames or URLs are provided.
+    </p>
+  </div>
+</section>
 </main>
 
 <footer>
-  <div class="footer-inner">
-    <div><strong>♡ HUMANITY BRIDGE FOUNDATION</strong><p id="footerTag">Together for Humanity, Hope for Everyone.</p><small>© <span id="year"></span> Humanity Bridge Foundation. All rights reserved.</small></div>
-    <div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#volunteer">Volunteer</a><a href="#donate">Donation Policy</a><a href="#contact">Contact</a></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>HUMANITY BRIDGE FOUNDATION</h3>
+        <p>Compassion, humanity and hope. This platform is being developed to support responsible humanitarian work and communication.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#about">About Us</a>
+        <a href="#sections">Departments</a>
+        <a href="#notices">Notice Board</a>
+        <a href="#founder">Founder</a>
+      </div>
+      <div>
+        <h3>Policies</h3>
+        <a href="#privacy" data-policy="privacy">Privacy Policy</a>
+        <a href="#terms" data-policy="terms">Terms & Conditions</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> HUMANITY BRIDGE FOUNDATION. All rights reserved.
+      <br>Website interface version 1.0
+    </div>
   </div>
-  <div class="footer-inner"><small>Privacy Policy • Terms & Conditions • Donation Policy — full policies must be reviewed before launch.</small></div>
 </footer>
-<div id="toast" role="status"></div>
+
+<div class="modal" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h2 id="registerTitle">Create an Account</h2>
+      <button class="close" data-close aria-label="Close">×</button>
+    </div>
+    <p class="form-note">Register interface preview. Secure account creation is not connected yet.</p>
+    <form id="registerForm">
+      <div class="form-grid">
+        <div class="form-group"><label for="regName">Full Name *</label><input id="regName" name="name" autocomplete="name" required></div>
+        <div class="form-group"><label for="regPhone">Phone Number *</label><input id="regPhone" name="phone" autocomplete="tel" required></div>
+      </div>
+      <div class="form-group"><label for="regEmail">Email Address *</label><input id="regEmail" name="email" type="email" autocomplete="email" required></div>
+      <div class="form-group"><label for="regAddress">Address *</label><textarea id="regAddress" name="address" rows="2" autocomplete="street-address" required></textarea></div>
+      <div class="form-grid">
+        <div class="form-group"><label for="regCountry">Country *</label><input id="regCountry" name="country" autocomplete="country-name" required></div>
+        <div class="form-group"><label for="regPassword">Create Password *</label><input id="regPassword" name="password" type="password" minlength="8" autocomplete="new-password" required></div>
+      </div>
+      <div class="form-group">
+        <label><input id="regConsent" type="checkbox" style="width:auto" required> I agree to the privacy policy and terms.</label>
+      </div>
+      <button class="btn btn-primary form-submit" type="submit">Continue Registration</button>
+      <div class="message" id="registerMessage"></div>
+    </form>
+    <p class="form-note">Do not enter real sensitive information into this preview. Connect a secure backend before accepting registrations.</p>
+  </div>
+</div>
+
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h2 id="loginTitle">Member Login</h2>
+      <button class="close" data-close aria-label="Close">×</button>
+    </div>
+    <p class="form-note">Login interface preview. Authentication is not connected yet.</p>
+    <form id="loginForm">
+      <div class="form-group"><label for="loginEmail">Email Address</label><input id="loginEmail" type="email" autocomplete="username" required></div>
+      <div class="form-group"><label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" required></div>
+      <button class="btn btn-primary form-submit" type="submit">Login</button>
+      <div class="message" id="loginMessage"></div>
+    </form>
+    <p class="form-note">Password recovery and secure member access require backend authentication.</p>
+  </div>
+</div>
+
+<div class="modal" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+  <div class="modal-box">
+    <div class="modal-head"><h2 id="infoTitle">Department</h2><button class="close" data-close aria-label="Close">×</button></div>
+    <p id="infoText"></p>
+    <p class="form-note">This department is part of the website plan. Its live records and administrative functions will be connected after backend setup.</p>
+    <button class="btn btn-primary" data-close>Close</button>
+  </div>
+</div>
+
+<div class="modal" id="policyModal" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+  <div class="modal-box">
+    <div class="modal-head"><h2 id="policyTitle">Policy</h2><button class="close" data-close aria-label="Close">×</button></div>
+    <p id="policyText"></p>
+    <p class="form-note">This is a preliminary placeholder. A final policy should be reviewed and adapted to the foundation's real practices and applicable law.</p>
+    <button class="btn btn-primary" data-close>Close</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
 <script>
-const items=[
-["about-us","About Us","পরিচিতি","Learn about the foundation and its purpose.","ফাউন্ডেশনের পরিচিতি ও উদ্দেশ্য জানুন।","🏛️","about"],
-["mission-vision","Mission & Vision","লক্ষ্য ও স্বপ্ন","Our goals, values and long-term vision.","আমাদের লক্ষ্য, মূল্যবোধ ও ভবিষ্যৎ পরিকল্পনা।","🌱","about"],
-["team","Our Team","আমাদের টিম","Meet confirmed foundation team members.","ফাউন্ডেশনের টিমের পরিচিতি।","👥","team"],
-["projects","Projects & Programs","প্রকল্প ও কর্মসূচি","Verified projects and community initiatives.","যাচাইকৃত প্রকল্প ও সামাজিক উদ্যোগ।","🤝","projects"],
-["events","Events & Campaigns","ইভেন্ট ও ক্যাম্পেইন","Announcements about upcoming activities.","আসন্ন কার্যক্রমের ঘোষণা।","📅","updates"],
-["gallery","Photo & Video Gallery","ছবি ও ভিডিও গ্যালারি","Photos and videos from verified activities.","যাচাইকৃত কার্যক্রমের ছবি ও ভিডিও।","🖼️","projects"],
-["news","News & Announcements","খবর ও ঘোষণা","Official foundation news and updates.","ফাউন্ডেশনের খবর ও আপডেট।","📰","updates"],
-["register","User Registration","নিবন্ধন","Account registration will be added with secure services.","নিরাপদ সার্ভিস যুক্ত হলে নিবন্ধন চালু হবে।","📝","contact"],
-["login","Login & Recovery","লগইন ও অ্যাকাউন্ট রিকভারি","Secure sign-in is not configured yet.","নিরাপদ লগইন এখনো চালু হয়নি।","🔐","contact"],
-["member","Member Portal","সদস্য পোর্টাল","Member features will be added after secure setup.","নিরাপদ ব্যবস্থা চালুর পর সদস্য সুবিধা যোগ হবে।","🪪","contact"],
-["volunteer","Volunteer Registration","স্বেচ্ছাসেবক নিবন্ধন","Share your interest in volunteering.","স্বেচ্ছাসেবক হওয়ার আগ্রহ জানান।","🙋","volunteer"],
-["partner","Become a Partner","পার্টনার হোন","Explore future partnership opportunities.","ভবিষ্যৎ অংশীদারত্বের সুযোগ।","🤝","contact"],
-["help-request","Request Help","সহায়তার আবেদন","A verified and private application process is required.","যাচাইকৃত ও ব্যক্তিগত আবেদন ব্যবস্থা প্রয়োজন।","🫶","contact"],
-["beneficiaries","Beneficiary Management","সহায়তাপ্রাপ্ত ব্যক্তির ব্যবস্থাপনা","Private beneficiary records require restricted access.","সহায়তাপ্রাপ্ত ব্যক্তির তথ্য সুরক্ষিত রাখতে হবে।","🏠","contact"],
-["contact","Contact & Support","যোগাযোগ ও সহায়তা","Contact the foundation team.","ফাউন্ডেশন টিমের সঙ্গে যোগাযোগ করুন।","✉️","contact"],
-["donate","Online Donation","অনলাইন ডোনেশন","Donations are not open yet.","ডোনেশন এখনো চালু হয়নি।","💚","donate"],
-["donation-history","Donation History","ডোনেশনের ইতিহাস","Private donor history requires secure login.","ব্যক্তিগত ইতিহাস দেখতে নিরাপদ লগইন প্রয়োজন।","🧾","donate"],
-["income-expense","Income & Expense","আয় ও ব্যয়","Financial records require verified data and controls.","আর্থিক হিসাবের জন্য যাচাইকৃত তথ্য ও নিয়ন্ত্রণ প্রয়োজন।","📊","contact"],
-["funds","Fund & Campaign Management","ফান্ড ও ক্যাম্পেইন","Campaign tools will be configured after review.","পর্যালোচনার পর ক্যাম্পেইন ব্যবস্থা চালু হবে।","🎯","projects"],
-["accounting","Automatic Accounting","স্বয়ংক্রিয় হিসাব","Secure accounting integration is not configured yet.","নিরাপদ হিসাব ব্যবস্থা এখনো সংযুক্ত নয়।","🧮","contact"],
-["receipts","Receipts & Reconciliation","রসিদ ও হিসাব মিল","Receipts require verified transactions.","রসিদের জন্য যাচাইকৃত লেনদেন প্রয়োজন।","📑","contact"],
-["reports","Financial Reports","আর্থিক প্রতিবেদন","Verified reports will be published when available.","যাচাইকৃত প্রতিবেদন প্রস্তুত হলে প্রকাশ করা হবে।","📈","updates"],
-["admin","Admin Dashboard","অ্যাডমিন ড্যাশবোর্ড","A secure private admin system is not configured yet.","নিরাপদ ব্যক্তিগত অ্যাডমিন সিস্টেম এখনো চালু হয়নি।","⚙️","contact"],
-["roles","Staff & Role Management","স্টাফ ও ভূমিকা","Restricted roles require backend authorization.","সীমিত অ্যাক্সেসের জন্য ব্যাকএন্ড অনুমতি প্রয়োজন।","🛡️","contact"],
-["content","Content Management","কনটেন্ট ব্যবস্থাপনা","Website content tools will be added in a later stage.","পরের ধাপে ওয়েবসাইট কনটেন্ট টুল যোগ হবে।","🗂️","contact"],
-["documents","Documents & Certificates","ডকুমেন্ট ও সার্টিফিকেট","Official documents will be published only after verification.","যাচাইয়ের পরই অফিসিয়াল ডকুমেন্ট প্রকাশ হবে।","📜","updates"],
-["notifications","Notifications & Newsletter","নোটিফিকেশন ও নিউজলেটার","Notification and email services are not connected yet.","নোটিফিকেশন ও ইমেইল সার্ভিস এখনো যুক্ত হয়নি।","🔔","contact"],
-["security","Privacy & Audit Logs","গোপনীয়তা ও অডিট লগ","Privacy and audit features require secure backend services.","গোপনীয়তা ও অডিট ফিচারের জন্য নিরাপদ ব্যাকএন্ড প্রয়োজন।","🔒","contact"],
-["settings","Language & Website Settings","ভাষা ও ওয়েবসাইট সেটিংস","Basic language and theme controls are available above.","উপরে ভাষা ও থিমের প্রাথমিক নিয়ন্ত্রণ রয়েছে।","🌐","home"]
+const departments = [
+  ["01","About Foundation","ফাউন্ডেশনের পরিচিতি","🏛️","community"],
+  ["02","Mission & Vision","লক্ষ্য ও উদ্দেশ্য","🎯","community"],
+  ["03","Founder & Owner","প্রতিষ্ঠাতার পরিচিতি","👤","management"],
+  ["04","Our Team","টিমের পরিচিতি","👥","community"],
+  ["05","Our Activities","চলমান কার্যক্রম","🤝","service"],
+  ["06","Humanitarian Aid","মানবিক সহায়তা","❤️","service"],
+  ["07","Donate","অনুদান দেওয়ার ব্যবস্থা","💝","service"],
+  ["08","Donation History","অনুদানের ইতিহাস","🧾","management"],
+  ["09","Funds & Campaigns","ফান্ড ও ক্যাম্পেইন","📣","service"],
+  ["10","Income & Expenses","আয়-ব্যয়ের হিসাব","🧮","management"],
+  ["11","Transparency Reports","স্বচ্ছতার প্রতিবেদন","📊","management"],
+  ["12","Member Dashboard","সদস্যের ড্যাশবোর্ড","🖥️","management"],
+  ["13","Volunteer Registration","স্বেচ্ছাসেবক নিবন্ধন","🙋","service"],
+  ["14","Request Assistance","সহায়তার আবেদন","📝","service"],
+  ["15","Beneficiaries","উপকারভোগীর তথ্য","🫶","service"],
+  ["16","Projects","প্রকল্পসমূহ","📂","service"],
+  ["17","Photo Gallery","ছবির গ্যালারি","🖼️","community"],
+  ["18","Video Gallery","ভিডিও গ্যালারি","🎬","community"],
+  ["19","Notice Board","নোটিশ বোর্ড","📢","community"],
+  ["20","News & Updates","সংবাদ ও আপডেট","📰","community"],
+  ["21","Events","ইভেন্ট ও কর্মসূচি","📅","community"],
+  ["22","Documents & Receipts","নথিপত্র ও রসিদ","📄","management"],
+  ["23","Member Profile","সদস্যের প্রোফাইল","🪪","management"],
+  ["24","Feedback & Complaints","মতামত ও অভিযোগ","💬","community"],
+  ["25","Contact Us","যোগাযোগ","📞","community"],
+  ["26","FAQs","সাধারণ প্রশ্নোত্তর","❓","community"],
+  ["27","Privacy Policy","গোপনীয়তা নীতি","🔒","management"],
+  ["28","Language Settings","ভাষা নির্বাচন","🌐","management"],
+  ["29","Appearance Settings","ডার্ক ও লাইট মোড","🌙","management"],
+  ["30","Founder Admin Panel","প্রতিষ্ঠাতার অ্যাডমিন প্যানেল","⚙️","management"]
 ];
-const projects=[
-["🤲","Community Support","Support programs will be announced after planning and verification."],
-["📚","Education & Learning","Potential education initiatives; no active program is claimed yet."],
-["💗","Health & Wellbeing","Health-related initiatives require appropriate partners and review."],
-["🌿","Emergency & Relief","Relief campaigns will be published only when properly organized."]
-];
-const bn={
-topMessage:"মানবতার জন্য একসঙ্গে, সবার জন্য আশার আলো। • অফিসিয়াল ফাউন্ডেশন ওয়েবসাইট",
-eyebrow:"সহমর্মিতায় গড়া একটি কমিউনিটি",
-heroTitle:"মানবতার জন্য একসঙ্গে,<br>সবার জন্য আশার আলো।",
-heroDesc:"যারা দয়া, মর্যাদা ও সহযোগিতার মাধ্যমে সুন্দর ভবিষ্যৎ গড়তে বিশ্বাস করেন, তাদের জন্য একটি উদ্যোগ।",
-aboutBtn:"আমাদের লক্ষ্য জানুন →",volBtn:"স্বেচ্ছাসেবক হোন",helpBtn:"যোগাযোগ",
-noticeTitle:"📢 অফিসিয়াল নোটিশ",noticeText:"Humanity Bridge Foundation-এ স্বাগতম। ওয়েবসাইটের সেবা প্রস্তুত করা হচ্ছে। অনলাইন ডোনেশন এখনো চালু হয়নি।",
-updatesTitle:"সর্বশেষ আপডেট",updatesDesc:"ফাউন্ডেশনের অফিসিয়াল তথ্য।",statusText:"ওয়েবসাইট প্রস্তুতি",updateHeading:"নতুন যাত্রার শুরু",updateBody:"আমাদের ওয়েবসাইট তৈরির কাজ চলছে। যাচাইকৃত ঘোষণা ও প্রকল্পের আপডেট প্রস্তুত হলে এখানে প্রকাশ করা হবে।",
-aboutTitle:"আমরা কারা",aboutSub:"ফাউন্ডেশন, উদ্দেশ্য ও মূল্যবোধ।",missionTitle:"আমাদের লক্ষ্য",missionText:"সহমর্মিতা, সামাজিক অংশগ্রহণ এবং প্রয়োজনমতো মানুষের পাশে দায়িত্বশীলভাবে দাঁড়াতে উৎসাহ দেওয়া।",visionTitle:"আমাদের স্বপ্ন",visionText:"এমন একটি বিশ্ব যেখানে সবাই মর্যাদা পাবে এবং কমিউনিটি স্থায়ী ইতিবাচক পরিবর্তনে একসঙ্গে কাজ করবে।",valuesTitle:"আমাদের মূল্যবোধ",valuesText:"মানবিক মর্যাদা, সততা, ন্যায্যতা, স্বচ্ছতা, সম্মান এবং সম্পদের দায়িত্বশীল ব্যবহার।",transTitle:"স্বচ্ছতা",transText:"প্রয়োজনীয় ব্যবস্থা ও নথি প্রস্তুত হলে যাচাইকৃত কার্যক্রম ও আর্থিক প্রতিবেদন প্রকাশের লক্ষ্য রয়েছে।",
-teamTitle:"আমাদের টিম",teamSub:"ফাউন্ডেশনের নেতৃত্ব ও সদস্যরা।",projectsTitle:"প্রকল্প ও কর্মসূচি",projectsSub:"আমাদের পরিকল্পিত কাজের ক্ষেত্রগুলো দেখুন।",servicesTitle:"ফাউন্ডেশনের সেবাসমূহ",servicesSub:"নিচে ওয়েবসাইটের বিভিন্ন সেকশন দেখুন।",
-volTitle:"স্বেচ্ছাসেবক হোন",volSub:"কমিউনিটির জন্য কাজ করতে আপনার আগ্রহ জানান।",volSubmit:"আগ্রহ জমা দিন",donateTitle:"আমাদের লক্ষ্যকে সহায়তা করুন",donateSub:"দায়িত্বশীল সহায়তা শুরু হয় স্বচ্ছতা দিয়ে।",donateStatus:"ডোনেশন চালু হয়নি",donateHeading:"অনলাইন ডোনেশন এখনো চালু হয়নি।",donateText:"ডোনেশন গ্রহণের আগে পেমেন্ট সার্ভিস, আইনি প্রয়োজনীয়তা ও আর্থিক প্রতিবেদন পদ্ধতি যাচাই করতে হবে। অনুগ্রহ করে অননুমোদিত অ্যাকাউন্টে টাকা পাঠাবেন না।",donateContact:"তথ্যের জন্য যোগাযোগ করুন",contactTitle:"যোগাযোগ ও সহায়তা",contactSub:"ফাউন্ডেশন টিমকে বার্তা পাঠান।",contactSubmit:"বার্তা পাঠান",contactFoot:"দ্রষ্টব্য: এটি একটি ডিজাইন প্রিভিউ। ফর্মের তথ্য এখনো সংরক্ষণ বা পাঠানো হয় না।",footerTag:"মানবতার জন্য একসঙ্গে, সবার জন্য আশার আলো।"
-};
-let bengali=false;
-function toggleLang(){
- bengali=!bengali;
- document.documentElement.lang=bengali?"bn":"en";
- document.getElementById("langBtn").textContent=bengali?"English":"বাংলা";
- Object.keys(bn).forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML=bengali?bn[id]:enText[id]});
- renderCards();
+
+const grid = document.getElementById("departmentGrid");
+const search = document.getElementById("departmentSearch");
+let currentFilter = "all";
+let currentLanguage = "en";
+
+function renderDepartments() {
+  const term = search.value.toLowerCase().trim();
+  grid.innerHTML = "";
+  departments.forEach(d => {
+    const matchesFilter = currentFilter === "all" || d[4] === currentFilter;
+    const matchesSearch = (d[1] + " " + d[2]).toLowerCase().includes(term);
+    const article = document.createElement("article");
+    article.className = "card section-card";
+    article.hidden = !(matchesFilter && matchesSearch);
+    const icon = document.createElement("div");
+    icon.className = "card-icon";
+    icon.textContent = d[3];
+    const title = document.createElement("h3");
+    title.textContent = d[1];
+    const desc = document.createElement("p");
+    desc.textContent = d[2];
+    const button = document.createElement("button");
+    button.className = "btn btn-outline";
+    button.textContent = "Open Department →";
+    button.addEventListener("click", () => {
+      document.getElementById("infoTitle").textContent = d[1];
+      document.getElementById("infoText").textContent = d[2] + ". This department is planned for Humanity Bridge Foundation.";
+      openModal("infoModal");
+    });
+    article.append(icon,title,desc,button);
+    grid.appendChild(article);
+  });
 }
-const enText={};
-Object.keys(bn).forEach(id=>{const el=document.getElementById(id);if(el)enText[id]=el.innerHTML});
-function renderCards(){
- const grid=document.getElementById("sectionGrid");
- grid.innerHTML="";
- items.forEach((it,i)=>{
-  const title=bengali?it[2]:it[1],desc=bengali?it[4]:it[3];
-  const card=document.createElement("article");card.className="card";
-  const symbol=document.createElement("div");symbol.className="symbol";symbol.textContent=it[5];
-  const h=document.createElement("h3");h.textContent=(i+1)+". "+title;
-  const p=document.createElement("p");p.textContent=desc;
-  const a=document.createElement("a");a.className="btn btn-primary";a.href="#"+it[6];a.textContent=bengali?"দেখুন →":"Open Section →";
-  card.append(symbol,h,p,a);grid.appendChild(card);
- });
+renderDepartments();
+search.addEventListener("input",renderDepartments);
+
+document.querySelectorAll("[data-filter]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentFilter = btn.dataset.filter;
+    document.querySelectorAll("[data-filter]").forEach(b => b.classList.toggle("active",b===btn));
+    renderDepartments();
+  });
+});
+
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    const focusable = modal.querySelector("input,button");
+    if (focusable) setTimeout(() => focusable.focus(),50);
+  }
 }
-function renderProjects(){
- const grid=document.getElementById("projectGrid");
- projects.forEach(p=>{
-  const card=document.createElement("article");card.className="card";
-  const symbol=document.createElement("div");symbol.className="symbol";symbol.textContent=p[0];
-  const h=document.createElement("h3");h.textContent=p[1];
-  const desc=document.createElement("p");desc.textContent=p[2];
-  card.append(symbol,h,desc);grid.appendChild(card);
- });
+function closeModal(modal) {
+  modal.classList.remove("open");
+  if (!document.querySelector(".modal.open")) document.body.style.overflow = "";
 }
-function toggleTheme(){document.body.classList.toggle("dark")}
+document.querySelectorAll("[data-modal]").forEach(btn => {
+  btn.addEventListener("click", () => openModal(btn.dataset.modal === "register" ? "registerModal" : "loginModal"));
+});
+document.querySelectorAll("[data-close]").forEach(btn => {
+  btn.addEventListener("click", () => closeModal(btn.closest(".modal")));
+});
+document.querySelectorAll(".modal").forEach(modal => {
+  modal.addEventListener("click", e => { if(e.target === modal) closeModal(modal); });
+});
+document.addEventListener("keydown",e => {
+  if(e.key === "Escape") document.querySelectorAll(".modal.open").forEach(closeModal);
+});
+
+document.getElementById("registerForm").addEventListener("submit",e => {
+  e.preventDefault();
+  const msg = document.getElementById("registerMessage");
+  msg.textContent = "This registration form is a design preview only. No account has been created and no information has been saved. A secure authentication service must be connected before registration can work.";
+  msg.classList.add("show");
+});
+document.getElementById("loginForm").addEventListener("submit",e => {
+  e.preventDefault();
+  const msg = document.getElementById("loginMessage");
+  msg.textContent = "Login is not connected yet. No login was performed. Secure backend authentication must be configured first.";
+  msg.classList.add("show");
+});
+
+document.getElementById("themeBtn").addEventListener("click",() => {
+  document.body.classList.toggle("dark");
+  document.getElementById("themeBtn").textContent = document.body.classList.contains("dark") ? "☀" : "☾";
+});
+document.getElementById("menuBtn").addEventListener("click",() => {
+  document.getElementById("navlinks").classList.toggle("open");
+});
+document.querySelectorAll("#navlinks a").forEach(a => a.addEventListener("click",() => {
+  document.getElementById("navlinks").classList.remove("open");
+}));
+
+document.getElementById("languageBtn").addEventListener("click",() => {
+  currentLanguage = currentLanguage === "en" ? "bn" : "en";
+  document.documentElement.lang = currentLanguage === "bn" ? "bn" : "en";
+  document.getElementById("languageBtn").textContent = currentLanguage === "bn" ? "English" : "বাংলা";
+  document.querySelectorAll("[data-en][data-bn]").forEach(el => {
+    el.textContent = el.dataset[currentLanguage];
+  });
+  document.getElementById("tickerText").textContent = currentLanguage === "bn"
+    ? "হিউম্যানিটি ব্রিজ ফাউন্ডেশনে স্বাগতম • অনুমোদিত বিজ্ঞপ্তি এখানে প্রকাশ করা হবে • মানবতার সেবায়, মানুষের পাশে •"
+    : "Welcome to Humanity Bridge Foundation • Official notices will appear here after publication • Compassion, Humanity and Hope •";
+});
+
+document.querySelectorAll("[data-policy]").forEach(a => a.addEventListener("click",e => {
+  e.preventDefault();
+  const isPrivacy = a.dataset.policy === "privacy";
+  document.getElementById("policyTitle").textContent = isPrivacy ? "Privacy Policy — Draft" : "Terms & Conditions — Draft";
+  document.getElementById("policyText").textContent = isPrivacy
+    ? "The foundation should explain what personal information it collects, why it is needed, who can access it, how long it is kept, and how members can request corrections or deletion. This draft is not a finalized legal policy."
+    : "Members should use the platform respectfully and provide accurate information. Requests, donations and projects are subject to verification and applicable rules. These preliminary terms require review before the website is used operationally.";
+  openModal("policyModal");
+}));
+
+const toast = document.getElementById("toast");
 let toastTimer;
-function showToast(message){
- const toast=document.getElementById("toast");toast.textContent=message;toast.style.display="block";
- clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.style.display="none",4200);
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"),3000);
 }
-function demoSubmit(event,message){event.preventDefault();showToast(message)}
-document.getElementById("year").textContent=new Date().getFullYear();
-renderCards();renderProjects();
+document.getElementById("backTop").addEventListener("click",() => window.scrollTo({top:0,behavior:"smooth"}));
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
